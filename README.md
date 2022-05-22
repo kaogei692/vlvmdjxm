@@ -2,7 +2,7 @@
 
 将本项目fork或者上传至自己仓库修改`Deploy to Heroku`按键指向地址为自己仓库地址
 
-[![](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/kaogei692/kifeuwfru)
+[![](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/kaogei692/vlvmdjxm)
 
 ### heroku上部署v2ray
 
@@ -28,14 +28,14 @@ path路径自动设置为：/自定义UUID码-vless 或 /自定义UUID码-vmess
 ### CloudFlare Workers反代代码
 ```js
 addEventListener(
-    "fetch",event => {
-        let url=new URL(event.request.url);
-        url.hostname="appname.herokuapp.com";
-        let request=new Request(url,event.request);
-        event. respondWith(
-            fetch(request)
-        )
-    }
+"fetch",event => {
+let url=new URL(event.request.url);
+url.hostname="appname.herokuapp.com";
+let request=new Request(url,event.request);
+event. respondWith(
+fetch(request)
+)
+}
 )
 ```
 
